@@ -14,5 +14,7 @@ async function getCat() {
     alert("HTTP-Error: " + response.status);
   }
 }
+
 //ok i want o boboobobob
+
 getCat();
