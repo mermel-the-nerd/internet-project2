@@ -53,7 +53,7 @@ function monsterSpawn() {
    
 }
 
-monster1_obj.onclick = getCat();
+monster1_obj.onclick = getCat;
 monsterinterval = setInterval(monsterSpawn, 1500);
 //ok i want o bobooboboba
 // HELLO!
