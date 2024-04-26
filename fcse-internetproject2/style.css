@@ -3,10 +3,11 @@ html {
   width: 100%;
 }
 body {background-color: lavenderblush;}
-catImg {
+
+#catImg {
   width: 100px;
   height: 100px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 
