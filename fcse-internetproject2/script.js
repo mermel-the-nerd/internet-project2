@@ -53,6 +53,6 @@ function monsterSpawn() {
    
 }
 
-//monsterinterval = setInterval(monsterSpawn, 1500);
+monsterinterval = setInterval(monsterSpawn, 1500);
 //ok i want o bobooboboba
 // HELLO!
