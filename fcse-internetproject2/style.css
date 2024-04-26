@@ -8,3 +8,21 @@ catImg {
   height: 300px;
   object-fit: contain;
 }
+
+
+#monster1
+{
+  height: 75;
+  width: 75px;
+}
+
+img {
+ position:absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.monster
+{
+z-index: 20;
+}
