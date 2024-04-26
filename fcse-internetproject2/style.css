@@ -3,3 +3,8 @@ html {
   width: 100%;
 }
 body {background-color: lavenderblush;}
+catImg {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+}
