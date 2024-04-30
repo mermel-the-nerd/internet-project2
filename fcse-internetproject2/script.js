@@ -6,15 +6,25 @@
  */
 
 let catImage = document.getElementById("catImg");
+let catCount = 0;
+let catNum = document.getElementById("catNum");
+let winTxt = document.getElementById("winTxt");
 
 async function getCat() {
   let response = await fetch('https://api.thecatapi.com/v1/images/search');
+    
   if (response.ok) {
     let data = await response.json();
     let imageUrl = data[0].url;
     displayCat(imageUrl);
   } else {
     alert("HTTP-Error: " + response.status);
+  }
+  catCount++;
+  catNum.innerHTML = ("Cats Clicked: " + catCount);
+    
+  if (catCount >= 3) {
+    winTxt.innerHTML = ("YAY you clicked 3 cats! You win! Feel free to keep going ;)");
   }
 }
 
