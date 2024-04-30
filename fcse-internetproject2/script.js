@@ -63,7 +63,40 @@ function monsterSpawn() {
    
 }
 
+function updateTimer(timeRemaining) {
+  const minutes = Math.floor(timeRemaining / 60);
+  const seconds = timeRemaining % 60;
+
+  const minutesStr = String(minutes).padStart(2, '0');
+  const secondsStr = String(seconds).padStart(2, '0');
+
+  const timerText = `${minutesStr}:${secondsStr}`;
+  document.getElementById("timer").innerHTML = timerText;
+
+  if (timeRemaining <= 0) {
+    clearInterval(timerInterval);
+    document.getElementById("timer").innerHTML = "Oh no! you didnt click enough cats in time. You lose :(";
+  } else {
+    timeRemaining--;
+  }
+}
+
+function startTimer(initialTime) {
+  let timeRemaining = initialTime;
+  updateTimer(timeRemaining);
+
+  timerInterval = setInterval(function () {
+    updateTimer(timeRemaining);
+    if (timeRemaining <= 0) {
+      clearInterval(timerInterval);
+    } else {
+      timeRemaining--;
+    }
+  }, 1000);
+}
 monster1_obj.onclick = getCat;
 monsterinterval = setInterval(monsterSpawn, 1500);
+startTimer(10)
 //ok i want o bobooboboba
 // HELLO!
+
