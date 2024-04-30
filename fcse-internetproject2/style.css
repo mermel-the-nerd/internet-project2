@@ -2,7 +2,10 @@ html {
   height: 100%;
   width: 100%;
 }
-body {background-color: lavenderblush;}
+
+body {
+  background-image: linear-gradient(#E4CBFF,#FECBFF,#FFCBE6,#FFCBCC,#FFE4CB,#FFFECB,#FFE4CB,#FFCBCC,#FFCBE6,#FECBFF,#E4CBFF);
+}
 
 #catImg {
   width: 100px;
@@ -26,3 +29,4 @@ body {background-color: lavenderblush;}
   left: 0px;
 z-index: 20;
 }
+
