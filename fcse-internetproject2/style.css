@@ -13,14 +13,11 @@ body {
   object-fit: fill;
 }
 
-
 #monster1
 {
   height: 75;
   width: 75px;
 }
-
-
 
 .monster
 {
@@ -30,3 +27,21 @@ body {
 z-index: 20;
 }
 
+#timer
+{
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold
+}
+
+#winTxt
+{
+    color:#554C60;
+    text-shadow: -1.5px -1.5px 0 #FFFECB, 1.5px -1.5px 0 #FFFECB, 1.5px 1.5px 0 #FFFECB, 1.5px 1.5px 0 #FFFECB;
+}
+
+{
+    color: #8E7F9F;
+}
