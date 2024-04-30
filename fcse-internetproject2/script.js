@@ -75,7 +75,10 @@ function updateTimer(timeRemaining) {
 
   if (timeRemaining <= 0) {
     clearInterval(timerInterval);
-    document.getElementById("timer").innerHTML = "Oh no! you didnt click enough cats in time. You lose :(";
+    document.getElementById("timer").innerHTML = "Countdown Expired!";
+    if(catCount<3){
+      winTxt.innerHTML = ("Oh no! you didnt click enough cats in time. You lose :(");
+    }
   } else {
     timeRemaining--;
   }
